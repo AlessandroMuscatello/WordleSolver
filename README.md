@@ -43,7 +43,7 @@ There are two main predicates:
 ## Example on a game
 1. Start your game on wordle using a word of your choice (I personally like to use the word "audio")
 
-![](https://github.com/AlessandroMuscatello/WordleSolver/wordle1.jpg)
+![](README%20images/wordle1.jpg)
 
 2. Based on the game response on the first word use the Prolog program to predict the next word.
   
@@ -57,7 +57,7 @@ There are two main predicates:
  ```
 3. At this point we need to choose one of the 501 words remaining in the list. We will use 'bikes'
 
-![](https://github.com/AlessandroMuscatello/WordleSolver/wordle2.jpg)
+![](README%20images/wordle2.jpg)
 
 4. We are not lucky and we still dont't get any of the green letters... Let's reuse the ***combinations()*** with the new informations
  ```
@@ -83,9 +83,9 @@ We reduced a lot of words! (From 501 to 14).
  stink  
  whisk
  ```
-6. Now we need to use a mixture of skill and luck... I choose for the next word 'shirk' a word that begins with 's' and has 'h' in second position, in that way I will know that 'frisk' and 'whisk' will be excluded but if the solution was one of them, the answer of Wordle will disjoin them with the colour of the 'h' (Green means that the solution is 'whisk', otherwise 'frisk' is the solution).
+6. Now we need to use a mixture of skill and luck... I choose for the next word 'shirk' a word that begins with 's' and has 'h' in second position, in that way if the 's' is green I will know that 'frisk' and 'whisk' will be excluded but if 's' il green, the solution was one of them, and then the answer of Wordle will disjoin them with the colour of the 'h' (Green means that the solution is 'whisk', otherwise 'frisk' is the solution).
 
-![](https://github.com/AlessandroMuscatello/WordleSolver/wordle3.jpg)
+![](README%20images/wordle3.jpg)
 
 7. Good! Again with ***combinations()***
  ```
@@ -95,7 +95,7 @@ We reduced a lot of words! (From 501 to 14).
  ```
  This time we will choose 'skimp', this should skim most of the remaining word (I'm working for an automated process of choosing the next moove)
  
-![](https://github.com/AlessandroMuscatello/WordleSolver/wordle4.jpg)
+![](README%20images/wordle4.jpg)
 
 8. Finally
 ```
@@ -104,6 +104,6 @@ N = 1,
 L = [skill].
 ```
 Let's try 'skill' which should be the correct answer
-![](https://github.com/AlessandroMuscatello/WordleSolver/wordle5.jpg)
+![](README%20images/wordle5.jpg)
   
   
