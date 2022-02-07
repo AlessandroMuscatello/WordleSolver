@@ -54,8 +54,8 @@ clcp_([Lett|Rest], N, [L1|C]):-
 %NotCorrectLetters - Checks if the Word has the wrong letters
 %Basically checks the red letters of Wordle
 %Ex:    Ncl = [],       Word = "audio" -> SATISFIED
-        Ncl = [b,c],    Word = "audio" -> SATISFIED
-        Ncl = [a],      Word = "audio" -> NOT SATISFIED
+%       Ncl = [b,c],    Word = "audio" -> SATISFIED
+%       Ncl = [a],      Word = "audio" -> NOT SATISFIED
 
 ncl([], _).
 ncl([Lett|Rest], Ncl):-
