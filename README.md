@@ -2,7 +2,7 @@
 My implementation of a Wordle (https://www.powerlanguage.co.uk/wordle/) solver in ProLog
 
 ## How it works
-Using SWI-Prolog I created this algorithm that return a word or a list of words that are possible solutions of the Wordle game. I used a complete list of english words (more than 50000) and the algoritm looks for words that are 5 letters long and comply with the constraints.
+Using SWI-Prolog I created this algorithm that return a word or a list of words that are possible solutions of the Wordle game. I used a complete list of english words (more than 50000) and extracted only 5 letters long words. The algorithm searches in them and returns only words that comply with the constraints.
 
 ## How to use it
 There are two main predicates:
